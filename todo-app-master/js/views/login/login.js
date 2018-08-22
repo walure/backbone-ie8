@@ -7,6 +7,7 @@ define([
   './scripts'
 ], function($, _, Backbone, statsTemplate, bootbox) {
   'use strict'
+  var path = location.pathname + '#/'
   var el = $('#login')
   var AppView = Backbone.View.extend({
     el: el,
@@ -46,7 +47,7 @@ define([
         return
       }
       $.cookie('username', username)
-      location.href = '/todo-app-master/#/'
+      location.href = path
     }
   })
 
