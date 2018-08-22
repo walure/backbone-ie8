@@ -1,10 +1,11 @@
 {
-  appDir: './',
+
     baseUrl: "../js",
-
-    name: "main",
-
-    out:'../dist',
+ 
+      name: "main",
+  
+    
+    out:'../js/out.js',
     shim: {
       bootstrap: ['jquery'],
       bootstrapTable: ['jquery', 'bootstrap'],
@@ -21,6 +22,11 @@
       backbone: 'libs/backbone/backbone',
       text: 'libs/require/text',
       router: 'router',
-      api: 'config/api'
+      api: 'config/api',
+      ieSet: 'libs/ieSet/ieSet',
+      utils: 'libs/utils/utils'
     },
+    urlArgs: 'v=0.0.1',
+    
+   
 }

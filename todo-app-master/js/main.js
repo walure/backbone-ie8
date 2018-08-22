@@ -23,9 +23,9 @@ require.config({
     router: 'router',
     api: 'config/api',
     ieSet: 'libs/ieSet/ieSet',
-    utils: 'lib/utils/utils'
+    utils: 'libs/utils/utils'
   },
   urlArgs: 'v=0.0.1'
 })
 
-require(['ieSet', 'router', 'bootstrap'])
+require(['router', 'bootstrap', 'ieSet'])

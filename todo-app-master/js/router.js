@@ -5,6 +5,9 @@ define(['jquery', 'underscore', 'backbone', 'jqueryCookie'], function(
 ) {
   'use strict'
 
+  var routesName = {
+    home: '首页'
+  }
   //判断是否登录
   function load(url, routes, query, callback) {
     // console.log(!$.cookie('username'))
@@ -26,7 +29,7 @@ define(['jquery', 'underscore', 'backbone', 'jqueryCookie'], function(
     }
     url = 'views/' + url
     require([url], function(AppView) {
-      var app_view = new AppView(query)
+      var app_view = new AppView({ name: routesName[routes], query: query })
       if (callback) {
         callback(app_view)
       }

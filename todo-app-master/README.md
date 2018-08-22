@@ -1,7 +1,12 @@
 r js 打包
 前提安装 node
 
-运行命令 node build/r.js -o build/app.build.js
+运行命令
+
+node bulid/r.js -o bulid/app.build.js
+
+
+node build/r.js -o cssIn=css/styles.css out=css/all.css optimizeCss=standard
 
 用到组件有
 

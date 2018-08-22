@@ -1,1 +1,12 @@
-编辑页面
+<ol class="breadcrumb">
+  <li>
+    <%= options.name %>
+  </li>
+  <li>列表</li>
+  <li class="active">
+    <%= options.query.length>0 ? '编辑' : '新增' %>
+  </li>
+  <li>
+    <a href="javascript:history.back()">返回</a>
+  </li>
+</ol>

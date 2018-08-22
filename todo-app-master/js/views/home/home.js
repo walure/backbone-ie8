@@ -7,7 +7,7 @@ define([
   'bootboxMin'
 ], function($, _, Backbone, statsTemplate, bootstrapTable, bootbox) {
   'use strict'
-  var path = '/todo-app-master/#/'
+  var path = location.pathname + '#/'
   function operateFormatter(value, row, index) {
     //赋予的参数
     return (
@@ -31,14 +31,15 @@ define([
     el: $('#page-wrapper'),
     statsTemplate: _.template(statsTemplate),
     events: {},
-    initialize: function() {
+    initialize: function(options) {
+      this.options = options
       //用来绑定事件
       this.render()
     },
     render: function() {
       //执行
       this.$el.off()
-      this.$el.html(this.statsTemplate())
+      this.$el.html(this.statsTemplate({ options: this.options }))
       this.$table = this.$('#table')
       this.initTable()
       this.deletes()

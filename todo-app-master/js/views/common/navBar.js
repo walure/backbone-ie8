@@ -5,7 +5,7 @@ define([
   'text!views/common/navBar.html'
 ], function($, _, Backbone, navBarTemplate) {
   'use strict'
-  var path = '/todo-app-master/#/'
+  var path = location.pathname + '#/'
   var AppView = Backbone.View.extend({
     el: $('#NavBar'),
     statsTemplate: _.template(navBarTemplate),
