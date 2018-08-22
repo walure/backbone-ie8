@@ -1,7 +1,7 @@
 # backbone-ie8
 支持ie8以上浏览器
 
-本地安装 npm express
+本地安装 npm i express
 
 运行node server
 
