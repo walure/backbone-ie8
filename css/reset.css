@@ -1,0 +1,92 @@
+body {
+  margin-top: 50px;
+}
+.navbar-header {
+  float: left;
+}
+.navbar-left {
+  float: left !important;
+}
+
+.navbar-right {
+  float: right !important;
+  margin-right: -15px;
+}
+
+.navbar-right ~ .navbar-right {
+  margin-right: 0;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+
+.navbar-nav > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.side-nav {
+  position: fixed;
+  top: 51px;
+  left: 225px;
+  width: 225px;
+  margin-left: -225px;
+  border: none;
+  border-radius: 0;
+  overflow-y: auto;
+  background-color: #222;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+}
+
+.side-nav > li > a {
+  width: 225px;
+}
+
+.side-nav li a:hover,
+.side-nav li a:focus {
+  outline: none;
+  background-color: #000 !important;
+}
+
+.navbar-collapse {
+  width: auto;
+  border-top: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-collapse.collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-collapse.in {
+  overflow-y: visible;
+}
+
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse,
+.navbar-static-top .navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#wrapper {
+  padding-left: 225px;
+}
+
+#page-wrapper {
+  padding: 10px;
+}
