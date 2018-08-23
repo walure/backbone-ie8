@@ -85,6 +85,7 @@ define([
             }
           },
           callback: function(result) {
+            that.$table.bootstrapTable('refresh')
             console.log('This was logged in the callback: ' + result)
           }
         })
@@ -165,15 +166,14 @@ define([
         pageNumber: 1, //初始化加载第一页，默认第一页
         pageSize: 10, //每页的记录行数（*）
         pageList: [10, 25, 50, 100], //可供选择的每页的行数（*）
-
         contentType: 'application/x-www-form-urlencoded',
-
         showRefresh: true, //是否显示刷新按钮
         striped: false, //是否显示行间隔色
         search: true, //搜索
         data: data,
         onPostBody: function(e) {
           //渲染表格成执行事件
+          console.log(e)
         },
         columns: [
           {
